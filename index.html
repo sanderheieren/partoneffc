@@ -16,8 +16,27 @@
     <section>
       <h2 tabindex="1" class="info">Media player for Screen Readers</h2>
       <audio controls>
-        <source src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3" />
+        <source
+          type="audio/mpeg"
+          src="https://s3.amazonaws.com/freecodecamp/screen-reader.mp3"
+        />
       </audio>
     </section>
+    <section>
+      <article>
+        <h2>Pick a date</h2>
+        <form>
+          <label for="pickdate">Date:</label>
+          <input type="date" name="pickdate" id="date" />
+
+          <button type="submit" name="submit" value="submit">submit</button>
+        </form>
+        <p>
+          Today's date:
+          <time datetime="2020-21-11">Saturday, November 21<sup>st</sup></time>
+        </p>
+      </article>
+    </section>
+    <footer>&copy; 2020 Sander Heieren</footer>
   </body>
 </html>
