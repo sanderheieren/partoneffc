@@ -12,7 +12,12 @@
     <h1>Having fun with CSS</h1>
     <section>
       <h2>Make a heart</h2>
-      <article draggable="true" ondragstart="drag" class="heart"></article>
+      <article
+        draggable="true"
+        ondragstart="drag(event)"
+        ondragend="dragEnd(event)"
+        class="heart"
+      ></article>
     </section>
     <section>
       <h2 tabindex="1" class="info">Media player for Screen Readers</h2>
@@ -32,7 +37,11 @@
 
           <button type="submit" name="submit" value="submit">submit</button>
         </form>
-        <p draggable="true" ondragstart="drag">
+        <p
+          draggable="true"
+          ondragend="dragEnd(event)"
+          ondragstart="drag(event)"
+        >
           Today's date:
           <time datetime="2020-21-11">Saturday, November 21<sup>st</sup></time>
         </p>

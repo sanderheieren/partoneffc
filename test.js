@@ -9,6 +9,11 @@ const counter = () => {
   total += 1;
 };
 arr[0].addEventListener("animationiteration", counter);
+arr[0].addEventListener("dragend", counter);
+
 const drag = (e) => {
-  console.log("you drag me");
+  console.log("you're dragging me");
+};
+const dragEnd = (e) => {
+  console.log("your drag ended");
 };
