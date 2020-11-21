@@ -1,0 +1,24 @@
+.heart {
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+  animation-name: heart;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes heart {
+  10% {
+    background-color: blue;
+  }
+  50% {
+    background-color: green;
+  }
+  100% {
+    background-color: yellow;
+  }
+}
+
+.heart:hover {
+  background-color: black;
+}
