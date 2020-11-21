@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
+
     <title>Document</title>
   </head>
   <body>
@@ -11,7 +12,7 @@
     <h1>Having fun with CSS</h1>
     <section>
       <h2>Make a heart</h2>
-      <article class="heart"></article>
+      <article draggable="true" ondragstart="drag" class="heart"></article>
     </section>
     <section>
       <h2 tabindex="1" class="info">Media player for Screen Readers</h2>
@@ -31,12 +32,13 @@
 
           <button type="submit" name="submit" value="submit">submit</button>
         </form>
-        <p>
+        <p draggable="true" ondragstart="drag">
           Today's date:
           <time datetime="2020-21-11">Saturday, November 21<sup>st</sup></time>
         </p>
       </article>
     </section>
     <footer>&copy; 2020 Sander Heieren</footer>
+    <script src="test.js"></script>
   </body>
 </html>
