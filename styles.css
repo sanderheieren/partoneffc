@@ -72,3 +72,14 @@ footer {
   color: white;
   text-align: center;
 }
+/* form label {
+  color: red;
+}
+input[type="date"] {
+  color: red;
+  background-color: cyan;
+}
+button[type="submit"] {
+  color: gray;
+  background-color: cyan;
+} */
