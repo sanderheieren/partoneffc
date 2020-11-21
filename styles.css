@@ -1,8 +1,11 @@
-.background {
-  border: 1px solid red;
+body {
+  background-color: pink;
+  animation-name: back;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 .heart {
-  background-color: red;
+  background-color: hsl(7, 75%, 50%);
   position: absolute;
   width: 50px;
   height: 50px;
@@ -19,7 +22,7 @@
 
 .heart::before {
   content: "";
-  background-color: red;
+  background-color: hsl(7, 75%, 50%);
   position: absolute;
   height: 50px;
   width: 50px;
@@ -28,7 +31,7 @@
 }
 .heart::after {
   content: "";
-  background-color: red;
+  background-color: hsl(7, 75%, 50%);
   position: absolute;
   height: 50px;
   width: 50px;
@@ -39,6 +42,11 @@
 @keyframes heart {
   50% {
     transform: scale(2) rotate(-45deg);
+  }
+}
+@keyframes back {
+  50% {
+    background-color: white;
   }
 }
 /* @keyframes hearthover {
