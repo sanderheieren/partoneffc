@@ -17,8 +17,12 @@ const drag = (e) => {
 const dragEnd = (e) => {
   console.log("your drag ended");
 };
-const toggleHeart = () => {
+const toggleHeart = (event) => {
   heart[0].style["animation-name"]
     ? (heart[0].style["animation-name"] = "")
     : (heart[0].style["animation-name"] = "heart");
+
+  event.target.innerHTML === "BEAT"
+    ? (event.target.innerHTML = "STOP BEATING")
+    : (event.target.innerHTML = "BEAT");
 };
