@@ -15,6 +15,10 @@ body {
 }
 .d5 {
   background: PaleGreen;
+  grid-column: 2 / 4;
+  grid-row: 2/4;
+  justify-self: center;
+  align-self: center;
 }
 
 .container {
@@ -23,7 +27,7 @@ body {
   background: LightGray;
   display: grid;
   grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 50px 50px;
-  grid-row-gap: 5px;
-  grid-column-gap: 10px;
+  grid-template-rows: 50px 50px 50px;
+  row-gap: 10px;
+  column-gap: 10px;
 }
