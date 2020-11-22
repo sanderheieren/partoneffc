@@ -17,3 +17,7 @@ const drag = (e) => {
 const dragEnd = (e) => {
   console.log("your drag ended");
 };
+const startHeart = () => {
+  heart[0].style["animation-name"] = "heart";
+  console.log("clicked me");
+};
