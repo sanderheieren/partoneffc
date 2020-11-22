@@ -48,12 +48,14 @@ h2 {
   width: 25%;
   height: 50%;
   flex-shrink: 5;
+  order: 6;
 }
 #box-4 {
   background-color: yellow;
   width: 25%;
   height: 50%;
   flex-shrink: 5;
+  order: 2;
 }
 #box-5 {
   background-color: green;
