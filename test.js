@@ -18,9 +18,7 @@ const dragEnd = (e) => {
   console.log("your drag ended");
 };
 const toggleHeart = () => {
-  if (heart[0].style["animation-name"]) {
-    heart[0].style["animation-name"] = "";
-  } else {
-    heart[0].style["animation-name"] = "heart";
-  }
+  heart[0].style["animation-name"]
+    ? (heart[0].style["animation-name"] = "")
+    : (heart[0].style["animation-name"] = "heart");
 };
